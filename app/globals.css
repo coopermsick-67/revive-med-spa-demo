@@ -1,0 +1,22 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #1e3a5f;
+    --color-primary-dark: #152a45;
+    --color-secondary: #2d4a6f;
+    --color-accent: #e8720c;
+    --color-accent-dark: #c45e0a;
+    --color-surface: #f8f7f4;
+    --color-surface-alt: #efe9e0;
+  }
+  * { @apply border-gray-200; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-gray-900 antialiased; }
+  ::selection { background-color: var(--color-accent); color: white; }
+}
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
